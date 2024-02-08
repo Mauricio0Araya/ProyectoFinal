@@ -25,7 +25,7 @@ function App() {
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/signup" element={<Signup/>}></Route>
                 <Route path="/cart" element={<Cart/>}></Route>
-                <Route path="/profile" element={<Profile/>}></Route>
+                <Route path="/profile" element={user ? <Profile/> : <Navigate to="/login"/>}></Route>
               </Routes>
           </BrowserRouter>
       </ImagenProvider>
