@@ -13,6 +13,7 @@ import './App.css'
 
 function App() {
   
+  const {user} = useContext(UserContext);
 
   return (
     <>
