@@ -1,0 +1,11 @@
+[
+   {"nombre": "Resident Evil",
+    "codigo": "PF1",
+    "precio": 10000,
+    "plataforma": "Playstation 3",
+    "categoria": "Survival Horror",
+    "descripcion": "El mejor juego de la saga",
+    "stock": 20,
+    "urlimagen": "https://uvejuegos.com/img/caratulas/53847/peque_portada16713.jpg"
+    } 
+]
