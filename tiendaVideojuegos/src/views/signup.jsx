@@ -1,8 +1,8 @@
-const signup = function () {
+const Signup = () => {
 
     return (
     <p>Registrarse</p>
     
     )}
     
-export default signup
+export default Signup;

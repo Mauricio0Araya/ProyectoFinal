@@ -1,7 +1,11 @@
-import { Link } from 'react-router-dom'; 
-import { react } from 'react';
+import { NavLink } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const Navbar = function() {
+
+const setActiveClass = ({isActive}) => (isActive ? "active" : undefined)
+console.log("Cargando Navbar")
+
 return (
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -12,13 +16,19 @@ return (
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+        <NavLink className="nav-link" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Iniciar Sesión</a>
+          <NavLink className="nav-link" to="/login">Iniciar Sesión</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Registrarse</a>
+          <NavLink className="nav-link" to="/signup">Registrarse</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/cart">Carrito</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/profile">Mi Perfil</NavLink>
         </li>
       </ul>
     </div>

@@ -1,8 +1,10 @@
-const login = function () {
+import { useNavigate } from "react-router-dom";
+
+const Login = function () {
 
 return (
 <p>Login</p>
 
 )}
 
-export default login
+export default Login;
