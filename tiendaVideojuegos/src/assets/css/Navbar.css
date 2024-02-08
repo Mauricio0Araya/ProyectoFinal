@@ -1,0 +1,12 @@
+/* navbar.css */
+.navbar {
+    background-color: #e3110a; /* Rojo italiano */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    margin: 0 10px;
+  }
