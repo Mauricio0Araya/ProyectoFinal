@@ -1,9 +1,16 @@
 import Navbar from "./components/Navbar.jsx";
+
+//VIEWS
 import Products from "./views/Products.jsx";
 import Login from "./views/Login.jsx";
 import Signup from "./views/Signup.jsx";
 import Cart from "./views/Cart.jsx";
 import Profile from "./views/Profile.jsx";
+import Favorites from "./views/Favorites.jsx";
+import Purchases from "./views/Purchasehistory.jsx";
+//VIEWS
+
+
 import { useContext } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import {ImagenProvider} from "./components/Context/MyContext.jsx";
@@ -28,6 +35,8 @@ function App() {
                 <Route path="/signup" element={<Signup/>}></Route>
                 <Route path="/cart" element={<Cart/>}></Route>
                 <Route path="/profile" element={user || enableTest==1 ? <Profile/> : <Navigate to="/login"/>}></Route>
+                <Route path="/favorites" element={user || enableTest==1 ? <Favorites/> : <Navigate to="/login"/>}></Route>
+                <Route path="/purchasehistory" element={user || enableTest==1 ? <Purchases/> : <Navigate to="/login"/>}></Route>
               </Routes>
           </BrowserRouter>
       </ImagenProvider>
