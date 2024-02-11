@@ -40,7 +40,7 @@ return (
           <NavLink className="nav-link" to="/profile">Mi Perfil</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/login">Cerrar Sesión</NavLink>
+          <NavLink className="nav-link" to="/login" onClick={cerrarSesion}>Cerrar Sesión</NavLink>
         </li>
       </ul>
     </div>
