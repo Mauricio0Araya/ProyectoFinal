@@ -1,0 +1,15 @@
+[
+
+    {
+        "nombre": "test",
+        "apellido": "Apellido Test",
+        "direccion": "Test Dirección 123",
+        "ciudad": "Test Ciudad",
+        "codigopostal": "123 VMS",
+        "email": "test@hotmail.com",
+        "telefono": "812395872",
+        "contraseña": "test123" 
+
+    }
+
+]

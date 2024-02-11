@@ -6,6 +6,7 @@ const ImagenContext = createContext();
 export function ImagenProvider({ children }) {
   const [games, setGames] = useState([]); 
   const [gameSelect, setGameSelected] = useState([]);
+  
 
   useEffect(() => {
     // Cargar las imágenes desde el archivo JSON al inicializar el contexto

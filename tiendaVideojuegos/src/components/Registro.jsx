@@ -1,9 +1,13 @@
-import { useState } from 'react'
-
+import { useState, useRef } from 'react'
+import { useContext } from "react";
+import {UserContext} from "./Context/userContext"
 
 const Registro = ({ setAlert }) => {
 
+    const {usuariolista, setUsuarioLista, user, setUser} = useContext(UserContext);
+    console.log(usuariolista)
 
+    const form = useRef()
     const [nombre, setNombre] = useState('')
     const [apellido, setApellido] = useState("")
     const [direccion, setDireccion] = useState("")
@@ -37,11 +41,26 @@ const Registro = ({ setAlert }) => {
         }
 
         else {
-                setAlert({
-                            msg:"Usuario Registrado Exitosamente",
-                            color: "success"
 
-                });
+                const nuevoUsuario = {
+                                        "nombre": nombre,
+                                        "apellido": apellido,
+                                        "direccion": direccion,
+                                        "ciudad": ciudad,
+                                        "codigopostal": codigopostal,
+                                        "email": email,
+                                        "telefono": telefono,
+                                        "contraseña": contrasena,
+
+
+                }
+
+                console.log(nuevoUsuario);
+
+                setUsuarioLista(usuariolista.push(nuevoUsuario));
+                setUser(email)
+
+
 
                 setNombre("");
                 setApellido("");
@@ -53,7 +72,12 @@ const Registro = ({ setAlert }) => {
                 setContrasena("");
                 setReingresarContrasena("");
 
+                setAlert({
+                    msg:"Usuario Registrado Exitosamente",
+                    color: "success"
+                });
 
+                form.current.reset()
         }
 
 
@@ -63,7 +87,7 @@ const Registro = ({ setAlert }) => {
 
 return (
 
-        <form className="row g-3 d-flex justify-content-center" onSubmit={validarFormulario}>
+        <form ref={form} className="row g-3 d-flex justify-content-center" onSubmit={validarFormulario}>
             <div className="row g-3 d-flex justify-content-center">
                 <div className="col-4">
                     <input type="text" className="form-control" placeholder="Nombre (Requerido)" aria-label="Nombre" onChange={(e) => setNombre(e.target.value)}/>

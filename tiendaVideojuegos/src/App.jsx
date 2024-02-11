@@ -14,6 +14,7 @@ import './App.css'
 function App() {
   
   const {user} = useContext(UserContext);
+  const {usuariolista} = useContext(UserContext)
 
   return (
     <>

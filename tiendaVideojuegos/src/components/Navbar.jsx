@@ -1,10 +1,19 @@
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react"; //Se añade el 2-11-2024 para poder configurar botón de Cerrar Sesión
+import {UserContext} from "../components/Context/userContext"; //Se añade el 2-11-2024 para poder configurar botón de Cerrar Sesión
+
 
 const Navbar = function() {
 
-const setActiveClass = ({isActive}) => (isActive ? "active" : undefined)
-console.log("Cargando Navbar")
+const setActiveClass = ({isActive}) => (isActive ? "active" : undefined);
+const {user, setUser} = useContext(UserContext);
+
+const cerrarSesion= () => {
+
+    setUser(null)
+}
+
 
 return (
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,6 +38,9 @@ return (
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/profile">Mi Perfil</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/login">Cerrar Sesión</NavLink>
         </li>
       </ul>
     </div>
