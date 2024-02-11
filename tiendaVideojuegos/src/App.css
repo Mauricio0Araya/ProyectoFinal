@@ -1,3 +1,7 @@
 .active {
     color: darkgreen;
     }
+
+.navlinkDesactivado {
+    display: none;
+}

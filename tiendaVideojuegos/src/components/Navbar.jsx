@@ -28,19 +28,19 @@ return (
         <NavLink className="nav-link" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/login">Iniciar Sesión</NavLink>
+          <NavLink className={user ? "navlinkDesactivado" : "nav-link" } to="/login">Iniciar Sesión</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/signup">Registrarse</NavLink>
+          <NavLink className={user ? "navlinkDesactivado" : "nav-link"} to="/signup">Registrarse</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/cart">Carrito</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/profile">Mi Perfil</NavLink>
+          <NavLink className={user ? "nav-link" : "navlinkDesactivado"} to="/profile">Mi Perfil</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/login" onClick={cerrarSesion}>Cerrar Sesión</NavLink>
+          <NavLink className={user ? "nav-link" : "navlinkDesactivado"} to="/login" onClick={cerrarSesion}>Cerrar Sesión</NavLink>
         </li>
       </ul>
     </div>
