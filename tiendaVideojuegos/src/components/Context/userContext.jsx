@@ -4,7 +4,7 @@ import Usuarios from '../../assets/json/usuarios.json'
 export const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
-        const [user, setUser] = useState(null);
+        const [user, setUser] = useState("test");
         const [usuariolista, setUsuarioLista] = useState(Usuarios)
 
         return (
