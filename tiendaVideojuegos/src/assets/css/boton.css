@@ -1,0 +1,12 @@
+/* button.css */
+.corazon {
+    color: red; /* Corazón rojo */
+    font-size: 24px;
+    transition: color 0.3s; /* Agrega una transición al cambio de color */
+    width: auto;
+  }
+  
+  .corazon.favorito {
+    color: #ff5733; /* Color naranja (por ejemplo) cuando se marca como favorito */
+  }
+  

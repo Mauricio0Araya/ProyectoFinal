@@ -1,0 +1,44 @@
+/* carrito.css */
+.carrito {
+    background-color: #fff; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde sutil */
+    padding:10px; /* Espaciado interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 10px; /* Margen alrededor del carrito */
+    border-radius: 10px; /* Borde redondeado para un aspecto suave */
+    display:flexbox; /* Utilizar flexbox para alinear elementos horizontalmente */
+    justify-content:center; /* Espacio entre elementos (alinear a los lados) */
+    align-items:center; /* Centrar verticalmente los elementos */
+  }
+  
+  .carrito h2 {
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    margin: 0; /* Eliminar el margen superior e inferior del título */
+  }
+  
+  .carrito ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0;
+  }
+  
+  .lista {
+    display: flex; /* Utilizar flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+  }
+  
+  .carrito .imagen {
+    max-width: 100px; /* Tamaño máximo de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .carrito p {
+    font-size: 1.2rem; /* Tamaño de fuente para el valor o precio */
+    margin: 0; /* Eliminar el margen superior e inferior del valor */
+  }
+  
+  /* Estilo para el "Total a pagar" */
+  .carrito .total {
+    font-weight: bold; /* Hacer el total negrita */
+  }
+  

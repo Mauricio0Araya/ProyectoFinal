@@ -1,0 +1,103 @@
+[
+    {
+        "nombre": "Resident Evil",
+        "id": "PF1",
+        "precio": 10000,
+        "plataforma": "Playstation 3",
+        "categoria": "Survival Horror",
+        "descripcion": "El mejor juego de la saga",
+        "stock": 20,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_858405-MLA52616932743_112022-F.webp"
+    },
+    {
+        "nombre": "The Legend of Zelda: Breath of the Wild",
+        "id": "PF2",
+        "precio": 12000,
+        "plataforma": "Nintendo Switch",
+        "categoria": "Aventura",
+        "descripcion": "Explora un vasto mundo abierto lleno de aventuras y misterios.",
+        "stock": 15,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_885517-MLU72675271636_112023-F.webp"
+    },
+    {
+        "nombre": "FIFA 22",
+        "id": "PF3",
+        "precio": 8000,
+        "plataforma": "Playstation 5",
+        "categoria": "Deportes",
+        "descripcion": "Experimenta el fútbol como nunca antes con la última entrega de la franquicia FIFA.",
+        "stock": 30,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_858879-MLA49902731409_052022-F.webp"
+    },
+    {
+        "nombre": "Assassin's Creed Valhalla",
+        "id": "PF4",
+        "precio": 11000,
+        "plataforma": "Xbox Series X",
+        "categoria": "Acción y Aventura",
+        "descripcion": "Embárcate en una épica saga vikinga en la era de los saqueos y la conquista.",
+        "stock": 25,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_692444-MLU73504863795_122023-F.webp"
+    },
+    {
+        "nombre": "Super Mario Odyssey",
+        "id": "PF5",
+        "precio": 10000,
+        "plataforma": "Nintendo Switch",
+        "categoria": "Plataforma",
+        "descripcion": "Únete a Mario en una emocionante aventura para salvar a la princesa Peach del malvado Bowser.",
+        "stock": 20,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_777866-MLA45732818763_042021-F.webp"
+    },
+    {
+        "nombre": "The Witcher 3: Wild Hunt",
+        "id": "PF6",
+        "precio": 9000,
+        "plataforma": "Playstation 4",
+        "categoria": "RPG",
+        "descripcion": "Explora un mundo lleno de monstruos y magia en esta épica aventura de rol.",
+        "stock": 18,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_679299-MLA40913987521_022020-F.webp"
+    },
+    {
+        "nombre": "Grand Theft Auto V",
+        "id": "PF7",
+        "precio": 15000,
+        "plataforma": "Xbox One",
+        "categoria": "Acción y Aventura",
+        "descripcion": "Explora la ciudad de Los Santos y vive una historia llena de crimen, traición y acción desenfrenada.",
+        "stock": 12,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_952458-MLA69099698204_042023-F.webp"
+    },
+    {
+        "nombre": "Minecraft",
+        "id": "PF8",
+        "precio": 8000,
+        "plataforma": "PC",
+        "categoria": "Sandbox",
+        "descripcion": "Construye y explora un mundo infinito hecho completamente de bloques.",
+        "stock": 22,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_794348-MLA53879335553_022023-F.webp"
+    },
+    {
+        "nombre": "Red Dead Redemption 2",
+        "id": "PF9",
+        "precio": 13000,
+        "plataforma": "Playstation 4",
+        "categoria": "Acción y Aventura",
+        "descripcion": "Embárcate en una épica historia del Salvaje Oeste y vive como un forajido en una tierra sin ley.",
+        "stock": 10,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_667696-MLA46792682054_072021-F.webp"
+    },
+    {
+        "nombre": "Hollow Knight",
+        "id": "PF10",
+        "precio": 7000,
+        "plataforma": "Nintendo Switch",
+        "categoria": "Metroidvania",
+        "descripcion": "Explora un vasto y misterioso reino subterráneo lleno de criaturas extrañas y desafiantes batallas.",
+        "stock": 17,
+        "urlimagen": "https://http2.mlstatic.com/D_NQ_NP_2X_745985-MLC42287018612_062020-F.webp"
+    }
+]
+   

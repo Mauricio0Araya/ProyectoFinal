@@ -1,11 +1,15 @@
 import { Router, Route, Routes } from 'react-router-dom'
-import {ImagenProvider} from '../components/Context/MyContext.jsx';
+import Game from '../components/Game.jsx'
 
 const Products = function () {
-    console.log("Redireccionando a Products")
     return (
-    <p>Lista de Productos</p>
-    
+            <>
+                <div className="reg-title d-flex justify-content-center">
+                    <h3>Lista de Productos</h3>
+                </div>
+
+                <Products/>
+            </>
     )}
     
 export default Products;

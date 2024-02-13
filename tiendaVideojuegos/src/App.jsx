@@ -1,4 +1,6 @@
 import Navbar from "./components/Navbar.jsx";
+import Game from './components/Game';
+import GameDetail from './components/GameDetail.jsx'
 
 //VIEWS
 import Products from "./views/Products.jsx";
@@ -13,7 +15,8 @@ import Purchases from "./views/Purchasehistory.jsx";
 
 import { useContext } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import {ImagenProvider} from "./components/Context/MyContext.jsx";
+//import {ImagenProvider} from "./components/Context/MyContext.jsx"; Se comenta para añadir ImagenContext.jsx
+import {ImagenProvider} from "./components/Context/ImagenContext.jsx";
 import {UserContext} from "./components/Context/userContext";
 import './App.css'
 
@@ -30,7 +33,8 @@ function App() {
           <BrowserRouter>
             <Navbar/>
               <Routes>
-                <Route exact path="/" element={<Products/>}></Route>
+                <Route exact path="/" element={<Game/>}></Route>
+                <Route exact path="/game/:id" element={<GameDetail/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/signup" element={<Signup/>}></Route>
                 <Route path="/cart" element={<Cart/>}></Route>
