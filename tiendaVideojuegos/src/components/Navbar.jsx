@@ -48,7 +48,7 @@ return (
           </ul>
         </li>
         <li className="nav-item">
-          <NavLink className={user ? "nav-link" : "navlinkDesactivado"} to="/login" onClick={cerrarSesion}>Cerrar Sesión</NavLink>
+          <NavLink className={user ? "nav-link" : "navlinkDesactivado"} to="/" onClick={cerrarSesion}>Cerrar Sesión</NavLink>
         </li>
       </ul>
     </div>
