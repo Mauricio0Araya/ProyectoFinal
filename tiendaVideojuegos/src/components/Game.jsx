@@ -3,6 +3,7 @@ import { useImagen } from "./context/ImagenContext";
 import { Link } from 'react-router-dom'; // Importa Link
 import "../assets/css/galeria.css";
 import '../assets/css/boton.css';
+import Heart from './Heart';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,18 +11,29 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function Games() {
-  const { games, gameSelect, setGameSelected } = useImagen();
+  const { games, gameSelect,gameFavoritos, setGameFavoritos, setGameSelected } = useImagen();
 
-  // Función para manejar el cambio de favoritos
-  const toggleFavorito = (id) => {
-    if (gameSelect.includes(id)) {
-      // Si ya es favorito, quitarlo de la lista de favoritos
-      setGameSelected(gameSelect.filter((favId) => favId !== id));
-    } else {
-      // Si no es favorito, agregarlo a la lista de favoritos
-      setGameSelected([...gameSelect, id]);
-    }
-  };
+// Función para manejar el cambio de favoritos
+const toggleFavorito = (id) => {
+  if (gameFavoritos.includes(id)) {
+    // Si ya es favorito, quitarlo de la lista de favoritos
+    setGameFavoritos(gameFavoritos.filter((favId) => favId !== id));
+  } else {
+    // Si no es favorito, agregarlo a la lista de favoritos
+    setGameFavoritos([...gameFavoritos, id]);
+  }
+};
+
+// Función para manejar el cambio en el carrito
+const toggleCarrito = (id) => {
+  if (gameSelect.includes(id)) {
+    // Si ya está en el carrito, quitarlo
+    setGameSelected(gameSelect.filter((cartId) => cartId !== id));
+  } else {
+    // Si no está en el carrito, agregarlo
+    setGameSelected([...gameSelect, id]);
+  }
+};
 
   return (
     <>
@@ -39,7 +51,7 @@ function Games() {
               <Button
                 variant="danger"
                 style={{ textDecoration: 'none', cursor: 'pointer', backgroundColor: 'red', color: 'white' }}
-                onClick={() => toggleFavorito(game.id)}
+                onClick={() => toggleCarrito(game.id)}
               >
                 {gameSelect.includes(game.id) ? 'Quitar del Carrito' : 'Agregar al Carrito'}
               </Button>
@@ -47,6 +59,12 @@ function Games() {
                 <Link to={`/game/${game.id}`} style={{ textDecoration: 'none', color: 'white' }}>Ver Detalle</Link>
               </Button>
 
+              <button
+                onClick={() => toggleFavorito(game.id)}
+                className={`corazon ${gameFavoritos.includes(game.id) ? 'favorito' : ''}`}
+              >
+                <Heart filled={gameFavoritos.includes(game.id)} />
+              </button>
 
             </Card.Body>
           </Card>
