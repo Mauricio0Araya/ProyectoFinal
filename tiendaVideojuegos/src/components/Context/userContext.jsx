@@ -1,14 +1,12 @@
 import { createContext, useState } from "react";
-import Usuarios from '../../assets/json/usuarios.json'
 
 export const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
-        const [user, setUser] = useState("test");
-        const [usuariolista, setUsuarioLista] = useState(Usuarios)
+        const [user, setUser] = useState("");
 
         return (
-            <UserContext.Provider value= {{user, setUser, usuariolista, setUsuarioLista}}>
+            <UserContext.Provider value= {{user, setUser}}>
                 {children}
             </UserContext.Provider>
         );

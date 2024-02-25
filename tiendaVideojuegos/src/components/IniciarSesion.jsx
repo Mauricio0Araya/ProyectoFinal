@@ -1,10 +1,12 @@
 import Loginform from './Loginform';
-function IniciarSesion () {
+function Iniciarsesion () {
     return(
         <div className='contenedor'>
-            <Loginform />
+            <Loginform/>
         </div>
+
+        
     )
 }
 
-export default IniciarSesion;
+export default Iniciarsesion;

@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar.jsx";
 import Game from './components/Game';
 import GameDetail from './components/GameDetail.jsx'
+import Iniciarsesion from "./components/IniciarSesion.jsx"
 
 //VIEWS
 import Products from "./views/Products.jsx";
-import Login from "./views/Login.jsx";
+//import Login from "./views/Login.jsx";
 import Signup from "./views/Signup.jsx";
 import Cart from "./views/Cart.jsx";
 import Profile from "./views/Profile.jsx";
@@ -24,7 +25,6 @@ import './App.css'
 function App() {
   
   const {user} = useContext(UserContext);
-  const {usuariolista} = useContext(UserContext);
   const enableTest = 1;
 
   return (
@@ -35,7 +35,7 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Game/>}></Route>
                 <Route exact path="/game/:id" element={<GameDetail/>}></Route>
-                <Route path="/login" element={<Login/>}></Route>
+                <Route path="/login" element={<Iniciarsesion/>}></Route>
                 <Route path="/signup" element={<Signup/>}></Route>
                 <Route path="/cart" element={<Cart/>}></Route>
                 <Route path="/profile" element={user || enableTest==1 ? <Profile/> : <Navigate to="/login"/>}></Route>
