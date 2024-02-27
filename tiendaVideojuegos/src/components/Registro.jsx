@@ -1,11 +1,6 @@
 import { useState, useRef } from 'react'
-import { useContext } from "react";
-import {UserContext} from "./Context/userContext"
 
 const Registro = ({ setAlert }) => {
-
-    const {usuariolista, setUsuarioLista, user, setUser} = useContext(UserContext);
-    console.log(usuariolista)
 
     const form = useRef()
     const [nombre, setNombre] = useState('')
@@ -54,11 +49,6 @@ const Registro = ({ setAlert }) => {
 
 
                 }
-
-                console.log(nuevoUsuario);
-
-                setUsuarioLista(usuariolista.push(nuevoUsuario));
-                setUser(email)
 
 
 
@@ -119,7 +109,7 @@ return (
 
             <div className="row g-3 d-flex justify-content-center">
                 <div className="col-4">
-                    <input type="password" className="form-control col-3 g-3" id="inputPassword4" placeholder="Contraseña (Requerido)" onChange={(e) => setContrasena(e.target.value)}/>
+                    <input type="password" className="form-control col-3 g-3" id="inputPassword3" placeholder="Contraseña (Requerido)" onChange={(e) => setContrasena(e.target.value)}/>
                 </div>
                 <div className="col-4">
                     <input type="password" className="form-control col-3 g-3" id="inputPassword4" placeholder="Reingresar Contraseña (Requerido)" onChange={(e) => setReingresarContrasena(e.target.value)}/>

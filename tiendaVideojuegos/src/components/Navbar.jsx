@@ -37,11 +37,11 @@ return (
         <li className="nav-item">
           <NavLink className="nav-link" to="/cart">Carrito</NavLink>
         </li>
-        <li class="nav-item dropdown">
-          <a class={user ? "nav-link dropdown-toggle" : "navlinkDesactivado"} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li className="nav-item dropdown">
+          <a className={user ? "nav-link dropdown-toggle" : "navlinkDesactivado"} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Configuración
           </a>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li><NavLink className="nav-link" to="/profile">Mi Perfil</NavLink></li>
             <li><NavLink className="nav-link" to="/purchasehistory">Mis Compras</NavLink></li>
             <li><NavLink className="nav-link" to="/favorites">Favoritos</NavLink></li>
