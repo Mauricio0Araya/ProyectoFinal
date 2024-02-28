@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar.jsx";
 import Game from './components/Game';
 import GameDetail from './components/GameDetail.jsx'
 import Iniciarsesion from "./components/IniciarSesion.jsx"
+import PurchaseDetail from "./components/PurchaseDetail.jsx"
 
 //VIEWS
 import Products from "./views/Products.jsx";
@@ -11,6 +12,7 @@ import Cart from "./views/Cart.jsx";
 import Profile from "./views/Profile.jsx";
 import Favorites from "./views/Favorites.jsx";
 import Purchases from "./views/Purchasehistory.jsx";
+import PurchaseDetailShower from "./views/PurchaseDetailShower.jsx";
 //VIEWS
 
 
@@ -41,6 +43,7 @@ function App() {
                 <Route path="/profile" element={user || enableTest==1 ? <Profile/> : <Navigate to="/login"/>}></Route>
                 <Route path="/favorites" element={user || enableTest==1 ? <Favorites/> : <Navigate to="/login"/>}></Route>
                 <Route path="/purchasehistory" element={user || enableTest==1 ? <Purchases/> : <Navigate to="/login"/>}></Route>
+                <Route path="/purchasehistory/:id" element={user || enableTest==1 ? <PurchaseDetailShower/> : <Navigate to="/login"/>}></Route>
               </Routes>
           </BrowserRouter>
       </ImagenProvider>
