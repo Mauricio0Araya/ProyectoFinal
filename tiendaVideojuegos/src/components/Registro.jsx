@@ -15,7 +15,10 @@ const Registro = ({ setAlert }) => {
 
     const EnviaRegistro = async (id, precio) => {
 
-        const url = "http://localhost:3000/usuarios";
+        //const url = "http://localhost:3000/usuarios";//
+
+        const url = "https://pfgames-devbackend-vutz.onrender.com/usuarios";
+
             
         try {
               const data = await fetch(url, {

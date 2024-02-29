@@ -14,7 +14,9 @@ const PurchaseDetail = () => {
 
     const obtenerDetalleCompra = async () => {
 
-        const url = `http://localhost:3000/compras/${id}`;
+        //const url = `http://localhost:3000/compras/${id}`;//
+
+        const url = "https://pfgames-devbackend-vutz.onrender.com/compras/${id}";
         console.log("Inicio obtención de Detalle")
 
         try {

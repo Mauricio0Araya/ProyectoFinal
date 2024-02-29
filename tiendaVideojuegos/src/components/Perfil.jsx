@@ -29,7 +29,8 @@ const Updateprof = ({ setAlert }) => {
 
     const obtenerDatosUsuario = async () => {
 
-        const url = "http://localhost:3000/usuarios";
+        //const url = "http://localhost:3000/usuarios";//
+        const url = "https://pfgames-devbackend-vutz.onrender.com/usuarios";
         console.log("Inicio obtención de datos de usuario")
 
         try {
@@ -85,7 +86,9 @@ const Updateprof = ({ setAlert }) => {
 
     const enviaActualizacion = async () => {
       
-        const url = "http://localhost:3000/usuarios";
+        //const url = "http://localhost:3000/usuarios";//
+
+        const url = "https://pfgames-devbackend-vutz.onrender.com/usuarios";
         
         try {
               const data = await fetch(url, {

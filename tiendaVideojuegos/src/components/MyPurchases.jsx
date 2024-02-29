@@ -21,7 +21,9 @@ const MyPurchases = () => {
 
     const obtenerCompras = async () => {
 
-        const url = "http://localhost:3000/compras";
+        //const url = "http://localhost:3000/compras";//
+
+        const url = "https://pfgames-devbackend-vutz.onrender.com/compras";
         console.log("Inicio obtención de listado de compras")
 
         try {

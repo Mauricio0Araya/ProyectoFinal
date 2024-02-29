@@ -22,7 +22,9 @@ function GameSelect() {
       }, []);
 
       const obtenerJuegosCarro = async () => {
-        const url = "http://localhost:3000/carrito";
+        //const url = "http://localhost:3000/carrito";//
+        const url = "https://pfgames-devbackend-vutz.onrender.com/carrito";
+
         console.log("Obteniendo juegos del carrito");
       
         try {

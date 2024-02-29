@@ -45,7 +45,10 @@ const toggleCarrito = (id, precio) => {
 
 const añadirProductoCarrito = async (id, precio) => {
 
-  const url = "http://localhost:3000/carrito";
+  //const url = "http://localhost:3000/carrito";//
+
+  const url = "https://pfgames-devbackend-vutz.onrender.com/carrito";
+
       
   try {
         const data = await fetch(url, {
@@ -74,7 +77,10 @@ const añadirProductoCarrito = async (id, precio) => {
 };
 
  const obtenerJuegosBackend = async () => {
-  const url = "http://localhost:3000/producto";
+  //const url = "http://localhost:3000/producto";//
+
+  const url = "https://pfgames-devbackend-vutz.onrender.com/producto";
+
   console.log("Obteniendo juegos");
 
   try {
