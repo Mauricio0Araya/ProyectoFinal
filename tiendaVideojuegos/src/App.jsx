@@ -5,8 +5,6 @@ import Iniciarsesion from "./components/IniciarSesion.jsx"
 import PurchaseDetail from "./components/PurchaseDetail.jsx"
 
 //VIEWS
-import Products from "./views/Products.jsx";
-//import Login from "./views/Login.jsx";
 import Signup from "./views/Signup.jsx";
 import Cart from "./views/Cart.jsx";
 import Profile from "./views/Profile.jsx";
