@@ -10,12 +10,12 @@ export function ImagenProvider({ children }) {
 
   useEffect(() => {
     // Cargar las imágenes desde el archivo JSON al inicializar el contexto
-    setGames(imagenesData); // Cambiado para acceder directamente a imagenesData
+    setGames([]); // Cambiado para acceder directamente a imagenesData
     
   }, []);
 
   return (
-    <ImagenContext.Provider value={{ games, gameSelect,gameFavoritos,setGameFavoritos, setGameSelected }}>
+    <ImagenContext.Provider value={{ games, setGames, gameSelect,gameFavoritos,setGameFavoritos, setGameSelected }}>
       {children}
     </ImagenContext.Provider>
   );

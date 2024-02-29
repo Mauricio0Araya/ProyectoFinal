@@ -13,6 +13,40 @@ const Registro = ({ setAlert }) => {
     const [contrasena, setContrasena] = useState("")
     const [reingresarcontrasena, setReingresarContrasena] = useState("")
 
+    const EnviaRegistro = async (id, precio) => {
+
+        const url = "http://localhost:3000/usuarios";
+            
+        try {
+              const data = await fetch(url, {
+                method: "POST",
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                        "nombre": nombre,
+                        "apellido": apellido,
+                        "direccion": direccion,
+                        "ciudad": ciudad,
+                        "codigopostal": codigopostal,
+                        "email": email,
+                        "telefono": telefono,
+                        "contrasena": contrasena,
+                        "reingresaContrasena": reingresarcontrasena
+                })
+              });
+              const resultado = await data.json();
+              console.log(resultado);
+      
+      
+        } catch (error) {
+          console.error("Error: ", error)
+      
+      
+        }
+
+    }
+
     const validarFormulario = (e) => { e.preventDefault()
 
         if (nombre == "" || nombre == null || apellido == "" || apellido == null || direccion == "" || direccion == null || ciudad == "" || ciudad == null ||
@@ -49,6 +83,8 @@ const Registro = ({ setAlert }) => {
 
 
                 }
+
+                EnviaRegistro()
 
 
 

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { UserContext } from "./Context/userContext.jsx"
 import { useImagen } from './context/ImagenContext';
 import '../assets/css/carrito.css';
 import Button from 'react-bootstrap/Button';
@@ -7,6 +8,44 @@ import Card from 'react-bootstrap/Card';
 function GameSelect() {
   const { games, gameSelect, setGameSelected } = useImagen();
   const [productCounts, setProductCounts] = useState({}); // Estado local para contar la cantidad de cada producto
+  var {user} = useContext(UserContext); // const de usuario
+  var resultado = ""
+
+  // INICIA LO NUEVO PARA QUE FUNCIONE EL CARRITO//
+    
+  const [juegosCarrito, setJuegosCarrito] = useState("");
+      
+
+      useEffect(() => {
+
+        obtenerJuegosCarro()
+      }, []);
+
+      const obtenerJuegosCarro = async () => {
+        const url = "http://localhost:3000/carrito";
+        console.log("Obteniendo juegos del carrito");
+      
+        try {
+          const data = await fetch(url, {
+            method: "GET",
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + user,
+            },
+          });
+      
+          resultado = await data.json();
+          console.log(resultado)
+        } catch (error) {
+          console.error("Error: ", error);
+        }
+      };
+      
+      
+
+  // FINALIZA LO NUEVO PARA QUE FUNCIONE EL CARRITO//
+
+
 
   // Función para calcular el total a pagar
   const calculateTotal = () => {
@@ -50,7 +89,7 @@ function GameSelect() {
         {gameSelect.map((id) => (
           <li key={id}>
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={games.find((g) => g.id === id).urlimagen} alt={games.find((g) => g.id === id).nombre} />
+              <Card.Img variant="top" src={games.find((g) => g.id === id).url_imagen} alt={games.find((g) => g.id === id).nombre} />
               <Card.Body>
                 <Card.Title>Producto</Card.Title>
                 <Card.Text>

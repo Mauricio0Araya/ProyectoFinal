@@ -36,7 +36,7 @@ const Inputloginform = ({ setAlert }) => {
               
               setUser(token.llave);
 
-              return token.llave;
+              return token;
 
             } else {
                     console.log("El token obtenido es vacío")
@@ -75,6 +75,7 @@ const Inputloginform = ({ setAlert }) => {
     } else {
             
             const respuesta = obtenerUserToken();
+            console.log(respuesta);
             if (respuesta != undefined && respuesta != "" && user != null && respuesta != null){
               console.log("pasa por la validacion correcta")
               navigate('/');
