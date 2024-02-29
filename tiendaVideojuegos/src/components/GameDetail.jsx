@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useImagen } from './context/ImagenContext';
+import { useImagen } from './Context/ImagenContext';
 import Carousel from 'react-bootstrap/Carousel';
 
 function GameDetail() {
