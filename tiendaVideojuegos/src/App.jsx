@@ -4,7 +4,7 @@ import GameDetail from './components/GameDetail.jsx';
 import Iniciarsesion from "./components/IniciarSesion.jsx";
 
 import Signup from "./views/signup.jsx";
-import Cart from "./views/Cart.jsx";
+import Cart from "./views/cart.jsx";
 import Profile from "./views/Profile.jsx";
 import Favorites from "./views/Favorites.jsx";
 import Purchases from "./views/Purchasehistory.jsx";
