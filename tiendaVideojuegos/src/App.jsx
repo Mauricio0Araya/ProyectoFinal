@@ -3,15 +3,12 @@ import Game from './components/Game';
 import GameDetail from './components/GameDetail.jsx';
 import Iniciarsesion from "./components/IniciarSesion.jsx";
 
-//VIEWS
 import Signup from "./views/Signup.jsx";
 import Cart from "./views/Cart.jsx";
 import Profile from "./views/Profile.jsx";
 import Favorites from "./views/Favorites.jsx";
 import Purchases from "./views/Purchasehistory.jsx";
 import PurchaseDetailShower from "./views/PurchaseDetailShower.jsx";
-//VIEWS
-
 
 import { useContext } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
