@@ -1,5 +1,5 @@
 import React from 'react';
-import { useImagen } from './context/ImagenContext';
+import { useImagen } from './Context/ImagenContext';
 import '../assets/css/carrito.css';
 import Button from 'react-bootstrap/Button';
 import Heart from './Heart'; // Suponiendo que este componente esté definido correctamente
