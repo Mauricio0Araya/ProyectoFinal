@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { UserContext } from "./Context/userContext.jsx"
-import { useImagen } from './context/ImagenContext';
+import { useImagen } from './Context/ImagenContext';
 import '../assets/css/carrito.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
