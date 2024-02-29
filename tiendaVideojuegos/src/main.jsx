@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import UserProvider from "./components/context/userContext.jsx";
+import UserProvider from "./components/Context/userContext.jsx";
 import App from './App.jsx'
 import './index.css'
 
