@@ -1,6 +1,6 @@
 import { React, useEffect, useContext } from 'react';
 import { UserContext } from "./Context/userContext.jsx"
-import { useImagen } from "./context/ImagenContext";
+import { useImagen } from "./Context/ImagenContext";
 import { Link } from 'react-router-dom'; // Importa Link
 import "../assets/css/galeria.css";
 import '../assets/css/boton.css';
