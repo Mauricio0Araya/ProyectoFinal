@@ -1,8 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import Game from './components/Game';
-import GameDetail from './components/GameDetail.jsx'
-import Iniciarsesion from "./components/IniciarSesion.jsx"
-import PurchaseDetail from "./components/PurchaseDetail.jsx"
+import GameDetail from './components/GameDetail.jsx';
+import Iniciarsesion from "./components/IniciarSesion.jsx";
 
 //VIEWS
 import Signup from "./views/Signup.jsx";
