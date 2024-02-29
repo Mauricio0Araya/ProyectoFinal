@@ -3,7 +3,7 @@ import Game from './components/Game';
 import GameDetail from './components/GameDetail.jsx';
 import Iniciarsesion from "./components/IniciarSesion.jsx";
 
-import Signup from "./views/Signup.jsx";
+import Signup from "./views/signup.jsx";
 import Cart from "./views/Cart.jsx";
 import Profile from "./views/Profile.jsx";
 import Favorites from "./views/Favorites.jsx";
